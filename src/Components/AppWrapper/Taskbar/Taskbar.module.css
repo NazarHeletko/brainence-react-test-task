@@ -1,0 +1,10 @@
+.taskbar {
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    margin: 16px;
+    box-shadow: 0px 6px 14px -4px rgba(165,166,129,1);
+}
