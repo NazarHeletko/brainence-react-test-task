@@ -16,3 +16,8 @@
 .add-product span {
     margin-left: 8px;
 }
+@media screen and (max-width: 576px) {
+    .add-product span {
+        display: none;
+    }
+}

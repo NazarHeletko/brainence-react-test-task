@@ -1,0 +1,17 @@
+.search input{
+    outline: none;
+    border: none;
+    box-shadow: 0px 6px 28px -4px rgba(165,166,129,1);
+    background-color: #eefff77d;
+    height: 28px;
+    width: 244px;
+    border-radius: 2px;
+    padding: 2px 10px;
+    margin-right: 4px;
+}
+
+@media screen and (max-width: 576px) {
+    .search input {
+        width: auto;
+    }
+}

@@ -2,6 +2,7 @@ const ADD_NEW_ITEM = 'ADD_NEW_ITEM';
 const DELETE_ITEM = 'DELETE_ITEM';
 const MOVE_ITEM_TO_TOP = 'MOVE_ITEM_TO_TOP';
 const CLOSE_OPEN_TOGLE_ADD_ITEM_MENU = 'CLOSE_OPEN_TOGLE_ADD_ITEM_MENU';
+const FILTER_ITEMS_BY_NAMES = 'FILTER_ITEMS_BY_NAMES';
 
 
 
@@ -101,6 +102,13 @@ const itemsReducer = (state = initialState, action: ActionTypes): InitialStateTy
                     return item.id != action.id
                 })
             };
+        case FILTER_ITEMS_BY_NAMES:
+            return{
+                ...state,
+                items: action.basicArrItems.filter((item)=>{
+                    return item.name.toLowerCase().indexOf(action.text.toLowerCase()) != -1;
+                })
+            };
         case ADD_NEW_ITEM:
             return{
                 ...state,
@@ -129,7 +137,21 @@ const itemsReducer = (state = initialState, action: ActionTypes): InitialStateTy
     }
 };
 
-type ActionTypes = DeleteItemActionType | MoveToTopActionType | closeOpenTogleAddItemMenuType | addProductType
+type ActionTypes = DeleteItemActionType | MoveToTopActionType | closeOpenTogleAddItemMenuType | addProductType | filterItemsByNameType
+
+type filterItemsByNameType = {
+    type: typeof FILTER_ITEMS_BY_NAMES
+    text: string
+    basicArrItems: Array<ItemType>
+}
+
+export const filterItemsByNameAC = (text: string, basicArrItems: Array<ItemType>): filterItemsByNameType => {
+    return {
+        type: FILTER_ITEMS_BY_NAMES,
+        text,
+        basicArrItems
+    }
+};
 
 
 type addProductType = {

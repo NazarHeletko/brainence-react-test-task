@@ -72,3 +72,14 @@
 .first-item-bg {
     background: #00ff3b47;
 }
+
+@media screen and (max-width: 992px) {
+    .single-item {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .single-item {
+        width: 100%;
+    }
+}
