@@ -1,7 +1,7 @@
 import React from "react"
 import style from './Taskbar.module.css'
-import AddProduct from "./AddProduct/AddProduct";
 import Search from "./Search/Search";
+import AddProductContainer from "./AddProduct/AddProductContainer";
 
 type PropsType = {
 
@@ -10,7 +10,7 @@ type PropsType = {
 let Taskbar: React.FC<PropsType> = () => {
     return(
         <div className={style.taskbar}>
-            <AddProduct/>
+            <AddProductContainer/>
             <Search/>
         </div>
     )

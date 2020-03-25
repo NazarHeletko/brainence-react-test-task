@@ -19,7 +19,7 @@ let SingleItem: React.FC<PropsType> = ({url, name, description, price, id, delet
     return (
         <div className={style['single-item']}>
             <div className={`${style['single-item-wrapper']} ${isFirstEl === 0 ? style['first-item-bg'] : null}`}>
-                <img src={url}/>
+                <img alt='wrong product url' src={url}/>
                 <h3>{name}</h3>
                 <p>{description}</p>
                 <span className={style.price}>{`Price: ${price}$`}</span>
@@ -28,7 +28,7 @@ let SingleItem: React.FC<PropsType> = ({url, name, description, price, id, delet
                 }} src={deletePng}/>
                 </div>
                 {
-                    isFirstEl === 0 ? <div className={style.pined}><img src={pinned} /></div> :
+                    isFirstEl === 0 ? <div className={style.pined}><img src={pinned}  /></div> :
                         <div className={style['move-to-top']}>
                             <img
                                 onClick={()=>moveToTopItemAC(name, description, url, price, id)}
