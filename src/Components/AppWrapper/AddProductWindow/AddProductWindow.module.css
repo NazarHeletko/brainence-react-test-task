@@ -59,6 +59,13 @@
     top: 50px;
 }
 
+@media screen and (max-width: 576px) {
+    .add-product-window {
+        width: 294px;
+        left: calc(50% - 150px);
+        top: 3%;
+    }
+}
 
 
 

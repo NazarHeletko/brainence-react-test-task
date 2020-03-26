@@ -11,7 +11,7 @@ type PropsType = {
     copyMainItemsAC: () => void
 }
 
-let AddProductWindow: React.FC<PropsType> = ({closeOpenTogleAddItemMenuAC, getItemsCount, addProductMenuAC, copyMainItemsAC})=> {
+let AddProductWindow: React.FC<PropsType> = ({closeOpenTogleAddItemMenuAC, getItemsCount, addProductMenuAC, copyMainItemsAC}) => {
 
     let [title, setTitle] = useState('');
     let [description, setDescription] = useState('');
@@ -27,7 +27,7 @@ let AddProductWindow: React.FC<PropsType> = ({closeOpenTogleAddItemMenuAC, getIt
             price: price,
             id: getItemsCount
         } as ItemType
-        if(String(newItem.price).length < 1 ){
+        if (String(newItem.price).length < 1) {
             setErrorPrice('All fields must be filled');
         } else {
             addProductMenuAC(newItem);
@@ -36,38 +36,46 @@ let AddProductWindow: React.FC<PropsType> = ({closeOpenTogleAddItemMenuAC, getIt
         }
     };
 
-    let onChangeInput = (e: ChangeEvent<HTMLInputElement>, inputType: string)=> {
+    let onChangeInput = (e: ChangeEvent<HTMLInputElement>, inputType: string) => {
         if (inputType === 'title') {
             setTitle(e.target.value)
-        }
-        else if (inputType === 'description') {
+        } else if (inputType === 'description') {
             setDescription(e.target.value)
-        }
-        else if (inputType === 'price') {
+        } else if (inputType === 'price') {
             setPrice(e.target.value)
-        }
-        else if (inputType === 'urlImage') {
+        } else if (inputType === 'urlImage') {
             setUrlImage(e.target.value)
         }
     };
 
-    return(
+    return (
         <div className={style['add-product-window']}>
             <span className={style['error-price']}>{errorPrice}</span>
             <h5>Title:</h5>
-            <input onChange={(e)=>{onChangeInput(e,'title')}} value={title} type="text"/>
+            <input onChange={(e) => {
+                onChangeInput(e, 'title')
+            }} value={title} type="text"/>
             <h5>Description:</h5>
-            <input onChange={(e)=>{onChangeInput(e,'description')}} value={description} type="text"/>
+            <input onChange={(e) => {
+                onChangeInput(e, 'description')
+            }} value={description} type="text"/>
             <h5>Price:</h5>
-            <input onChange={(e)=>{onChangeInput(e,'price')}} value={price} type="number"/>
+            <input onChange={(e) => {
+                onChangeInput(e, 'price')
+            }} value={price} type="number"/>
             <h5>Product image url</h5>
-            <input onChange={(e)=>{onChangeInput(e,'urlImage')}} value={urlImage} type="text"/>
+            <input onChange={(e) => {
+                onChangeInput(e, 'urlImage')
+            }} value={urlImage} type="text"/>
             <div className={style['close-btn']}>
-                <img onClick={()=>{closeOpenTogleAddItemMenuAC(false)}} src={closeAddItemImg} alt="close menu"/>
+                <img onClick={() => {
+                    closeOpenTogleAddItemMenuAC(false)
+                }} src={closeAddItemImg} alt="close menu"/>
             </div>
-            <button onClick={()=>{
+            <button onClick={() => {
                 addNewProduct();
-            }} className={style['post-item']}>add</button>
+            }} className={style['post-item']}>add
+            </button>
         </div>
     )
 };

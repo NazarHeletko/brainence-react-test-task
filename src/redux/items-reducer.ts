@@ -14,7 +14,7 @@ export type ItemType = {
 }
 
 let initialState = {
-    editMode: false,
+    editMode: true,
     items: [
         {
             name: 'Lenovo IdeaPad S540-14IML',
