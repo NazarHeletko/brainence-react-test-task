@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a5f00cfbb952d0184b37d46a408d010e",
+    "revision": "48a000183230d5a900dc08d604fecd22",
     "url": "/brainence-react-test-task/index.html"
   },
   {
-    "revision": "1c2c40649d52c43b5017",
-    "url": "/brainence-react-test-task/static/css/main.37023f30.chunk.css"
+    "revision": "6f8fe799adce86c9daa7",
+    "url": "/brainence-react-test-task/static/css/main.03847bcd.chunk.css"
   },
   {
     "revision": "1dcb7a1c60c08b958169",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/brainence-react-test-task/static/js/2.5a9e08ef.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1c2c40649d52c43b5017",
-    "url": "/brainence-react-test-task/static/js/main.c8fb2858.chunk.js"
+    "revision": "6f8fe799adce86c9daa7",
+    "url": "/brainence-react-test-task/static/js/main.84392d2c.chunk.js"
   },
   {
     "revision": "c9790ed5315b5c415367",

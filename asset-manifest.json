@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/brainence-react-test-task/static/css/main.37023f30.chunk.css",
-    "main.js": "/brainence-react-test-task/static/js/main.c8fb2858.chunk.js",
-    "main.js.map": "/brainence-react-test-task/static/js/main.c8fb2858.chunk.js.map",
+    "main.css": "/brainence-react-test-task/static/css/main.03847bcd.chunk.css",
+    "main.js": "/brainence-react-test-task/static/js/main.84392d2c.chunk.js",
+    "main.js.map": "/brainence-react-test-task/static/js/main.84392d2c.chunk.js.map",
     "runtime-main.js": "/brainence-react-test-task/static/js/runtime-main.2df12c7a.js",
     "runtime-main.js.map": "/brainence-react-test-task/static/js/runtime-main.2df12c7a.js.map",
     "static/js/2.5a9e08ef.chunk.js": "/brainence-react-test-task/static/js/2.5a9e08ef.chunk.js",
     "static/js/2.5a9e08ef.chunk.js.map": "/brainence-react-test-task/static/js/2.5a9e08ef.chunk.js.map",
     "index.html": "/brainence-react-test-task/index.html",
-    "precache-manifest.3c82166e381eeceb3049ebcc30e533aa.js": "/brainence-react-test-task/precache-manifest.3c82166e381eeceb3049ebcc30e533aa.js",
+    "precache-manifest.eedb0e8f7161df408cff0e612962d126.js": "/brainence-react-test-task/precache-manifest.eedb0e8f7161df408cff0e612962d126.js",
     "service-worker.js": "/brainence-react-test-task/service-worker.js",
-    "static/css/main.37023f30.chunk.css.map": "/brainence-react-test-task/static/css/main.37023f30.chunk.css.map",
+    "static/css/main.03847bcd.chunk.css.map": "/brainence-react-test-task/static/css/main.03847bcd.chunk.css.map",
     "static/js/2.5a9e08ef.chunk.js.LICENSE.txt": "/brainence-react-test-task/static/js/2.5a9e08ef.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2df12c7a.js",
     "static/js/2.5a9e08ef.chunk.js",
-    "static/css/main.37023f30.chunk.css",
-    "static/js/main.c8fb2858.chunk.js"
+    "static/css/main.03847bcd.chunk.css",
+    "static/js/main.84392d2c.chunk.js"
   ]
 }
