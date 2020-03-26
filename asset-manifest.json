@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/brainence-react-test-task/static/css/main.03847bcd.chunk.css",
-    "main.js": "/brainence-react-test-task/static/js/main.84392d2c.chunk.js",
-    "main.js.map": "/brainence-react-test-task/static/js/main.84392d2c.chunk.js.map",
+    "main.js": "/brainence-react-test-task/static/js/main.c8fb2858.chunk.js",
+    "main.js.map": "/brainence-react-test-task/static/js/main.c8fb2858.chunk.js.map",
     "runtime-main.js": "/brainence-react-test-task/static/js/runtime-main.2df12c7a.js",
     "runtime-main.js.map": "/brainence-react-test-task/static/js/runtime-main.2df12c7a.js.map",
     "static/js/2.5a9e08ef.chunk.js": "/brainence-react-test-task/static/js/2.5a9e08ef.chunk.js",
     "static/js/2.5a9e08ef.chunk.js.map": "/brainence-react-test-task/static/js/2.5a9e08ef.chunk.js.map",
     "index.html": "/brainence-react-test-task/index.html",
-    "precache-manifest.eedb0e8f7161df408cff0e612962d126.js": "/brainence-react-test-task/precache-manifest.eedb0e8f7161df408cff0e612962d126.js",
+    "precache-manifest.76341e12d8612e821253368efce40e8a.js": "/brainence-react-test-task/precache-manifest.76341e12d8612e821253368efce40e8a.js",
     "service-worker.js": "/brainence-react-test-task/service-worker.js",
     "static/css/main.03847bcd.chunk.css.map": "/brainence-react-test-task/static/css/main.03847bcd.chunk.css.map",
     "static/js/2.5a9e08ef.chunk.js.LICENSE.txt": "/brainence-react-test-task/static/js/2.5a9e08ef.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.2df12c7a.js",
     "static/js/2.5a9e08ef.chunk.js",
     "static/css/main.03847bcd.chunk.css",
-    "static/js/main.84392d2c.chunk.js"
+    "static/js/main.c8fb2858.chunk.js"
   ]
 }

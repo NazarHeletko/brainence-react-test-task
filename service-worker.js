@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/brainence-react-test-task/precache-manifest.eedb0e8f7161df408cff0e612962d126.js"
+  "/brainence-react-test-task/precache-manifest.76341e12d8612e821253368efce40e8a.js"
 );
 
 self.addEventListener('message', (event) => {
