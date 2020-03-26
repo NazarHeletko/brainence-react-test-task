@@ -1,23 +1,24 @@
 import {connect} from 'react-redux';
 import {AppStateType} from "../../../../redux/redux-store";
 import Search from "./Search";
-import {filterItemsByNameAC, ItemType} from "../../../../redux/items-reducer";
+import {copyMainItemsAC, filterItemsByNameAC, ItemType} from "../../../../redux/items-reducer";
 import {itemsDataSimleSelector} from "../../../../redux/selectors";
 
 
 
 type mapStateToPropsType = {
-    itemsDataSimleSelector: Array<ItemType>
+    itemsDataPresent: Array<ItemType>
 }
 
 type mapDispatchToPropsType = {
     filterItemsByNameAC: (text: string, basicArrItems: Array<ItemType>) => void
+    copyMainItemsAC: ()=> void
 }
 
 let mapStateToProps = (state: AppStateType): mapStateToPropsType => {
     return{
-        itemsDataSimleSelector: itemsDataSimleSelector(state)
+        itemsDataPresent: itemsDataSimleSelector(state)
     }
 };
 
-export default connect<mapStateToPropsType, mapDispatchToPropsType, {}, AppStateType>(mapStateToProps, {filterItemsByNameAC})(Search)
+export default connect<mapStateToPropsType, mapDispatchToPropsType, {}, AppStateType>(mapStateToProps, {filterItemsByNameAC, copyMainItemsAC})(Search)

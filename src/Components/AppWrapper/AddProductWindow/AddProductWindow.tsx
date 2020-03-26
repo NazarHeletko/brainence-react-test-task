@@ -8,9 +8,10 @@ type PropsType = {
     closeOpenTogleAddItemMenuAC: (close: boolean) => void
     addProductMenuAC: (item: ItemType) => void
     getItemsCount: number
+    copyMainItemsAC: () => void
 }
 
-let AddProductWindow: React.FC<PropsType> = ({closeOpenTogleAddItemMenuAC, getItemsCount, addProductMenuAC})=> {
+let AddProductWindow: React.FC<PropsType> = ({closeOpenTogleAddItemMenuAC, getItemsCount, addProductMenuAC, copyMainItemsAC})=> {
 
     let [title, setTitle] = useState('');
     let [description, setDescription] = useState('');
@@ -30,6 +31,7 @@ let AddProductWindow: React.FC<PropsType> = ({closeOpenTogleAddItemMenuAC, getIt
             setErrorPrice('All fields must be filled');
         } else {
             addProductMenuAC(newItem);
+            copyMainItemsAC();
             closeOpenTogleAddItemMenuAC(false);
         }
     };

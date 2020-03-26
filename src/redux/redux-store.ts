@@ -11,5 +11,7 @@ export type AppStateType = ReturnType<RootReducerType>
 
 let store = createStore(rootReducer);
 
+// @ts-ignore
+window.store = store;
 
 export default store;

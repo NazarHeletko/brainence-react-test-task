@@ -1,23 +1,28 @@
 import {connect} from 'react-redux';
 import Items from "./Items";
 import {AppStateType} from "../../../redux/redux-store";
-import {itemsDataSimleSelector} from "../../../redux/selectors";
-import {deleteItemAC, ItemType, moveToTopItemAC} from "../../../redux/items-reducer";
+import {itemsDataCopyFilterSimleSelector} from "../../../redux/selectors";
+import {copyMainItemsAC, deleteItemAC, ItemType, moveToTopItemAC} from "../../../redux/items-reducer";
 
 type mapStateToPropsType = {
-    itemsData: Array<ItemType>
+    itemsDataCopyFilter: Array<ItemType>
 }
 
 type mapDispatchToPropsType = {
-    deleteItemAC: (id: number)=> void
-    moveToTopItemAC: (name: string, description: string, img: string, price: number, id: number)=> void
+    deleteItemAC: (id: number) => void
+    moveToTopItemAC: (name: string, description: string, img: string, price: number, id: number) => void
+    copyMainItemsAC: () => void
 }
 
 
 let mapStateToProps = (state: AppStateType): mapStateToPropsType => {
-    return{
-        itemsData: itemsDataSimleSelector(state)
+    return {
+        itemsDataCopyFilter: itemsDataCopyFilterSimleSelector(state)
     }
 };
 
-export default connect<mapStateToPropsType, mapDispatchToPropsType, {}, AppStateType>(mapStateToProps, {deleteItemAC, moveToTopItemAC})(Items)
+export default connect<mapStateToPropsType, mapDispatchToPropsType, {}, AppStateType>(mapStateToProps, {
+    deleteItemAC,
+    moveToTopItemAC,
+    copyMainItemsAC
+})(Items)
